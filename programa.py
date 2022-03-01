@@ -1,4 +1,4 @@
-from tienda2 import Farmacia, Restaurante, Supermercado
+from tienda import Farmacia, Restaurante, Supermercado
 from input_tienda import main, main2
 import sys
 import os
@@ -46,7 +46,7 @@ while True:
             print('')
         elif eleccion == '2':
             os.system(op_sys)
-            nombre_producto = input("Ingrese el nombre del prodcuto que desea vender: ").lower()
+            nombre_producto = input("Ingrese el nombre del producto que desea vender: ").lower()
             cantidad_requerida = int(input("Ingrese la cantidad requerida: "))
             print('')
             tienda.venta(nombre_producto, cantidad_requerida)
